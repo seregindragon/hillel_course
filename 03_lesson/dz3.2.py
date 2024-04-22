@@ -1,4 +1,4 @@
-lst = [12]
+lst = [12, 3, 4, 10]
 lst2 = []
 if len(lst) != 0:
     lst2.append(lst[-1])
