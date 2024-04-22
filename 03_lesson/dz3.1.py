@@ -1,6 +1,6 @@
 x = int(input("enter x:"))
 y = int(input("enter y:"))
-pro = input("enter action'+-*/':")
+pro = input("enter action' + - * / ':")
 
 if pro == "/":
     if y == 0:
