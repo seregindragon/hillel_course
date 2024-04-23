@@ -4,10 +4,10 @@ pro = input("enter action' + - * / ':")
 
 if pro == "/":
     if y == 0:
-        y = int(input("Enter 'y' again but more 0:"))
-        print("equals:", x, "/", y, "=", x / y)
-    else:
         print("we can't do it action!!!")
+    else:
+        print("equals:", x, "/", y, "=", x / y)
+
 elif pro == "*":
     print("equals:", x, "*", y, "=", x * y)
 elif pro == "-":
