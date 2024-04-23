@@ -5,9 +5,9 @@ pro = input("enter action' + - * / ':")
 if pro == "/":
     if y == 0:
         y = int(input("Enter 'y' again but more 0:"))
-    elif y < 0:
-        y = int(input("Enter 'y' again but more 0:"))
-    print("equals:", x, "/", y, "=", x / y)
+        print("equals:", x, "/", y, "=", x / y)
+    else:
+        print("we can't do it action!!!")
 elif pro == "*":
     print("equals:", x, "*", y, "=", x * y)
 elif pro == "-":
