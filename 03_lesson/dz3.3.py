@@ -1,4 +1,4 @@
-lst = [1, 2, 3]
+lst = [1]
 lst2 = []
 
 if len(lst) % 2 == 0 and len(lst) != 0:
