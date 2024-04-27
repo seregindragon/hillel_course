@@ -12,6 +12,3 @@ if len(list1) > 0:
         print(su * list1[-1])
 else:
     print("0")
-
-
-
