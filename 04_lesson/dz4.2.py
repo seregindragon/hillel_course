@@ -8,7 +8,6 @@ if len(list1) > 0:
     for i in range(len(list1)):
         if i % 2 == 0:
             su += list1[i]
-    else:
-        print(su * list1[-1])
+    print(su * list1[-1])
 else:
     print("0")
