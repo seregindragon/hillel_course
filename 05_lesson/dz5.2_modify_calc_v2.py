@@ -23,4 +23,4 @@ while True:
     if input("Is there anything else you need to count?(y/n):") == "n":
         break
 
-print("Thanks for using my calculator, come back again. ©Seregin")
+print("Thanks for using my calculator, come back again.©Seregin")
