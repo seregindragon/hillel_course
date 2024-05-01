@@ -3,6 +3,9 @@ import string
 
 string1 = input()
 if string1.startswith("__"):
+    for i in string1:
+        if i.isalpha():
+            exit("True")
     exit("False")
 if string1[0].isdigit() or ' ' in string1:
     exit("False")
