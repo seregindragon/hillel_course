@@ -3,7 +3,8 @@ import string
 
 string1 = input()
 string_result = "TRUE"
-
+if string1.startswith("__"):
+    exit("False")
 if string1[0].isdigit() or ' ' in string1:
     string_result = "FALSE"
     exit("False")
