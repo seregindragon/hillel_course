@@ -10,6 +10,6 @@ print(b["name"])
 
 print(len(a))
 print("name" in a)
-print("sort" in a)
+print("25" in a)
 
 
