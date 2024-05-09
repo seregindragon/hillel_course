@@ -1,9 +1,8 @@
-def second_index(text: str, some_str: str):
+def second_index(text: str, some_str: str) -> int | None:
     if text.count(some_str) > 1:
         index_find = text.find(some_str, text.index(some_str) + 1)
         return index_find
-    else:
-        return None
+    return None
 
 
 if __name__ == "__main__":

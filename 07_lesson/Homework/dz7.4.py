@@ -1,4 +1,4 @@
-def common_elements():
+def common_elements() -> set:
     list_triple = []
     list_fifve = []
     for i in range(100):
