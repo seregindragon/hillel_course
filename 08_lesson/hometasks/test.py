@@ -1,7 +1,9 @@
-list1 = [2, 3, 3, 3, 5, 5]
-for i in list1:
-    if list1.count(i) == 1:
-        print(i)
+sentence = "Quick brown fox"
+temp = sentence.split(" ")
+for i in range(len(temp)):
+    print(temp[i])
+    temp[i] = temp[i][::-1]
 
 
 
+print(" ".join(temp))
