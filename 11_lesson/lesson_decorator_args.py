@@ -1,6 +1,7 @@
 def repeat(number):
     def decorator(func):
         def wrapper(*args, **kwargs):
+            global value
             print("before")
             for _ in range(number):
                 value = func(*args, **kwargs)
