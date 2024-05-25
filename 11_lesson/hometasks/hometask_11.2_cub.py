@@ -2,14 +2,11 @@ from inspect import isgenerator
 
 
 def generate_cube_numbers(end: int):
-    for i in range(2,end+1):
-        if i**3 > end:
+    for i in range(2, end + 1):
+        if i ** 3 > end:
             return
         else:
-            yield i**3
-
-
-
+            yield i ** 3
 
 
 gen = generate_cube_numbers(1)
