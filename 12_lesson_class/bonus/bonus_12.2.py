@@ -6,6 +6,7 @@ class Rectangle:
     def calculate_area(self):
         return self.width * self.height
 
+
 # Перевірка:
 rect = Rectangle(5, 10)
 assert rect.calculate_area() == 50
