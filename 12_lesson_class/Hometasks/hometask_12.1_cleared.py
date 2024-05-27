@@ -1,7 +1,7 @@
 import codecs
 
 
-def delete_html_tags(html_file, result_file='cleaned.txt') -> None:
+def delete_html_tags(html_file: str, result_file="cleaned.txt") -> None:
     """
     :param html_file: файл який потрібно очистити
     :param result_file: файл результату
