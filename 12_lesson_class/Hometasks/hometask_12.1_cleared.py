@@ -1,7 +1,16 @@
 import codecs
 
 
-def delete_html_tags(html_file, result_file='cleaned.txt'):
+def delete_html_tags(html_file, result_file='cleaned.txt') -> None:
+    """
+    :param html_file: файл який потрібно очистити
+    :param result_file: файл результату
+    :return: нічего не повертаємо
+    перший with читає файл для обробки
+    другий - запусує оброблений текст до файлу cleaned.txt
+    третий - відркриває файл cleaned.txt для очистки від зайвих пустих стрічок.
+    четвертий - записує рельзультат у файл cleaned.txt
+    """
     html_temp = ""
     with codecs.open(html_file, 'r', 'utf-8') as file:
         html = file.read()
