@@ -34,11 +34,10 @@ class Group:
         if student:
             self.group.remove(student)
 
-    def find_student(self, last_name: str) -> str | None:
-        for student in self.group:
-            if student.last_name == last_name:
-                return student
-        return None
+    def find_student(self, last_name: str) -> Student | None:
+        if student.last_name in (student.last_name for student in self.group):
+            return student
+
 
     def __str__(self):
         all_students = '\n'.join(str(student) for student in self.group)
