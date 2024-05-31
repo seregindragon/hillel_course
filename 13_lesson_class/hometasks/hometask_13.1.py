@@ -17,7 +17,7 @@ class Student(Human):
         self.record_book = record_book
 
     def __str__(self) -> str:
-        return f'{super().__str__()}, record book: {self.record_book}'
+        return f'{self.first_name} {self.last_name}, {self.age} years old, {self.gender}, {self.record_book}'
 
 
 class Group:
@@ -34,11 +34,10 @@ class Group:
         if student:
             self.group.remove(student)
 
-    def find_student(self, last_name: str) -> str | None:
-        for student in self.group:
-            if student.last_name == last_name:
-                return student
-        return None
+    def find_student(self, last_name: str) -> Student | None:
+        if student.last_name in (student.last_name for student in self.group):
+            return student
+
 
     def __str__(self):
         all_students = '\n'.join(str(student) for student in self.group)
